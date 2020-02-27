@@ -22,7 +22,7 @@ public class Menu {
 
             //Push
 
-            if (!input.equals("sin")) {
+            if (!input.equals("sin") && !input.equals("cos")) {
                 System.out.println("Please, write the second value: ");
                 String yValue = sc.next();
                 Calculator calculator = new Calculator(Double.parseDouble(xValue),Double.parseDouble(yValue),input);
@@ -33,7 +33,6 @@ public class Menu {
                 Calculator calculator = new Calculator(Double.parseDouble(xValue),Double.parseDouble(yValue),input);
                 Show(calculator);
             }
-
 
 
         }

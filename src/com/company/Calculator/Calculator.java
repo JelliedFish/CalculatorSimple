@@ -42,6 +42,9 @@ public class Calculator {
             case ("sin"):
                 return Sin(xValue);
 
+            case ("cos"):
+                return Cos(xValue);
+
 
             default:
                 System.out.print("Incorrect input... Please choose : {+,-,*,/,%,^} \n");
@@ -80,6 +83,11 @@ public class Calculator {
     public  static double Sin (double xValue) {
         return Math.sin(xValue);
     }
+
+    public  static double Cos (double xValue) {
+        return Math.cos(xValue);
+    }
+
 
 
 }

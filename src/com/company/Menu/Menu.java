@@ -22,14 +22,20 @@ public class Menu {
 
             //Push
 
+            if (!input.equals("sin")) {
+                System.out.println("Please, write the second value: ");
+                String yValue = sc.next();
+                Calculator calculator = new Calculator(Double.parseDouble(xValue),Double.parseDouble(yValue),input);
+                Show(calculator);
+            }
+            else {
+                String yValue = "1.0";
+                Calculator calculator = new Calculator(Double.parseDouble(xValue),Double.parseDouble(yValue),input);
+                Show(calculator);
+            }
 
-            System.out.println("Please, write the second value: ");
-            String yValue = sc.next();
 
 
-
-            Calculator calculator = new Calculator(Double.parseDouble(xValue),Double.parseDouble(yValue),input);
-            Show(calculator);
         }
     }
 

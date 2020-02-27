@@ -39,6 +39,9 @@ public class Calculator {
             case ("^"):
                 return Power(xValue,yValue);
 
+            case ("sin"):
+                return Sin(xValue);
+
 
             default:
                 System.out.print("Incorrect input... Please choose : {+,-,*,/,%,^} \n");
@@ -73,5 +76,10 @@ public class Calculator {
     public  static double Power (double xValue, double yValue) {
         return Math.pow(xValue, yValue);
     }
+
+    public  static double Sin (double xValue) {
+        return Math.sin(xValue);
+    }
+
 
 }
